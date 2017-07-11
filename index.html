@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
+    <link href="css/freelancer.css" rel="stylesheet">
     <link href="css/plans.css" rel="stylesheet">
     <link href="css/testimonial.css" rel="stylesheet">
 
@@ -281,12 +281,12 @@
     <div class="col-md-12">
       <div class="carousel slide" data-ride="carousel" id="quote-carousel">
       
-<!-- Bottom Carousel Indicators -->
+<!-- Bottom Carousel Indicators 
 <ol class="carousel-indicators">
   <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
   <li data-target="#quote-carousel" data-slide-to="1"></li>
   <li data-target="#quote-carousel" data-slide-to="2"></li>
-</ol>
+</ol>-->
         
 <!-- Carousel Slides / Quotes -->
 <div class="carousel-inner">
@@ -337,8 +337,7 @@
             <hr class="star-light">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                	<div style="background-color: white;">
                     <form name="sentMessage" id="contactForm" novalidate>
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls">
@@ -354,13 +353,6 @@
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
-                        <!--<div class="control-group">
-                            <div class="form-group floating-label-form-group controls">
-                                <label>Phone Number</label>
-                                <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required data-validation-required-message="Please enter your phone number.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div> -->
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls">
                                 <label>Message</label>
@@ -371,9 +363,10 @@
                         <br>
                         <div id="success"></div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-success btn-lg">Send</button>
+                            <button type="submit" class="btn btn-outline" style="cursor: pointer;">Send</button>
                         </div>
                     </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -702,14 +695,11 @@
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
-    <script type="text/javascript">$(document).ready(function() {
-  //carousel options
-  $('#quote-carousel').carousel({
-    pause: true, interval: 10000,
-  });
-});</script>
+    
     <script src="vendor/tether/tether.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+	$('#quote-carousel').carousel();</script>
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
@@ -720,6 +710,8 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
+
+
 
 </body>
 

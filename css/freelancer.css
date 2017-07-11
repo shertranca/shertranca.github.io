@@ -77,6 +77,10 @@ section.success {
   color: white;
   background: #18BC9C; }
 
+  section.alt {
+  color: white;
+  background: white; }
+
 @media (max-width: 767px) {
   section {
     padding: 75px 0; }
@@ -348,7 +352,7 @@ footer {
   font-size: 20px;
   margin-top: 15px;
   transition: all .3s ease-in-out;
-  color: #18bc9c;
+  color: #ffffff;
   border: solid 2px white;
   background: #18bc9c; }
   .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
